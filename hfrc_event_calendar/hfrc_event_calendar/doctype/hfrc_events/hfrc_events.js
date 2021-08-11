@@ -2,8 +2,8 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('HFRC Events', {
-	category_type: function (frm) {
-		let category = frm.doc.category_type
+	category: function (frm) {
+		let category = frm.doc.category
 
 		frm.set_query('sub_category', () => {
 			return {

@@ -1,5 +1,4 @@
 MANIFEST.in
-README.md
 license.txt
 requirements.txt
 setup.py
@@ -16,5 +15,21 @@ hfrc_event_calendar/config/__init__.py
 hfrc_event_calendar/config/desktop.py
 hfrc_event_calendar/config/docs.py
 hfrc_event_calendar/hfrc_event_calendar/__init__.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/__init__.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/category/__init__.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/category/category.js
+hfrc_event_calendar/hfrc_event_calendar/doctype/category/category.json
+hfrc_event_calendar/hfrc_event_calendar/doctype/category/category.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/category/test_category.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/__init__.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/hfrc_events.js
+hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/hfrc_events.json
+hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/hfrc_events.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/test_hfrc_events.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/subcategory/__init__.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/subcategory/subcategory.js
+hfrc_event_calendar/hfrc_event_calendar/doctype/subcategory/subcategory.json
+hfrc_event_calendar/hfrc_event_calendar/doctype/subcategory/subcategory.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/subcategory/test_subcategory.py
 hfrc_event_calendar/templates/__init__.py
 hfrc_event_calendar/templates/pages/__init__.py
