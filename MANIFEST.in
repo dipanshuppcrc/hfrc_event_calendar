@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hfrc_event_calendar *.css
+recursive-include hfrc_event_calendar *.csv
+recursive-include hfrc_event_calendar *.html
+recursive-include hfrc_event_calendar *.ico
+recursive-include hfrc_event_calendar *.js
+recursive-include hfrc_event_calendar *.json
+recursive-include hfrc_event_calendar *.md
+recursive-include hfrc_event_calendar *.png
+recursive-include hfrc_event_calendar *.py
+recursive-include hfrc_event_calendar *.svg
+recursive-include hfrc_event_calendar *.txt
+recursive-exclude hfrc_event_calendar *.pyc
