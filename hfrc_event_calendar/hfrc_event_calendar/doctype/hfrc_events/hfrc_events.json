@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "autoname": "event_title.###",
+ "creation": "2021-08-11 12:48:34.790372",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event_dates",
+  "start_date",
+  "column_break_2",
+  "end_date",
+  "about",
+  "event_title",
+  "description",
+  "info",
+  "speaker__guest",
+  "column_break_10",
+  "location",
+  "other_location",
+  "event_category",
+  "category",
+  "column_break_15",
+  "sub_category",
+  "finance",
+  "amount_spent",
+  "column_break_20",
+  "event_type",
+  "images",
+  "image",
+  "section_break_20",
+  "remarks",
+  "section_break_22",
+  "route",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "event_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Event Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "speaker__guest",
+   "fieldtype": "Data",
+   "label": "Speaker / Guest",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "options": "Ratnagiri\nPune\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "other_location",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Other Location"
+  },
+  {
+   "fieldname": "amount_spent",
+   "fieldtype": "Currency",
+   "label": "Amount Spent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "label": "Event Type",
+   "options": "Charitable\nChargeable",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remark",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HFRC Events",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sub_category",
+   "fieldtype": "Link",
+   "label": "Sub Category",
+   "options": "Subcategory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "event_dates",
+   "fieldtype": "Section Break",
+   "label": "Event Date/s"
+  },
+  {
+   "fieldname": "about",
+   "fieldtype": "Section Break",
+   "label": "About"
+  },
+  {
+   "fieldname": "info",
+   "fieldtype": "Section Break",
+   "label": "Info"
+  },
+  {
+   "fieldname": "event_category",
+   "fieldtype": "Section Break",
+   "label": "Event Category"
+  },
+  {
+   "fieldname": "finance",
+   "fieldtype": "Section Break",
+   "label": "Finance"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "images",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Table",
+   "label": "Image",
+   "options": "Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-08-12 00:47:28.847156",
+ "modified_by": "Administrator",
+ "module": "Hfrc Event Calendar",
+ "name": "HFRC Events",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "event_title",
+ "track_changes": 1
+}
