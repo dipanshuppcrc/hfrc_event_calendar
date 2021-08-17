@@ -2,9 +2,11 @@
  "category": "Modules",
  "charts": [
   {
-   "chart_name": "Events"
+   "chart_name": "Events",
+   "label": "Events"
   }
  ],
+ "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create New\",\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event List \",\"col\":7}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Events\",\"col\":12}}]",
  "creation": "2021-08-12 00:19:53.226010",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -12,17 +14,48 @@
  "doctype": "Workspace",
  "extends_another_page": 0,
  "hide_custom": 0,
+ "icon": "calendar",
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
  "label": "Event Calendar",
- "links": [],
- "modified": "2021-08-12 00:19:53.226010",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Calendar",
+   "link_count": 0,
+   "link_to": "HFRC Events",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2021-08-17 22:17:31.591089",
  "modified_by": "Administrator",
  "module": "Hfrc Event Calendar",
  "name": "Event Calendar",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 1,
- "shortcuts": []
+ "public": 1,
+ "roles": [],
+ "sequence_id": 0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Create New",
+   "link_to": "HFRC Events",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Event List ",
+   "link_to": "HFRC Events",
+   "type": "DocType"
+  }
+ ],
+ "title": "Event Calendar"
 }
