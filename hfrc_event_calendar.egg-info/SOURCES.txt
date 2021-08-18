@@ -27,6 +27,8 @@ hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/hfrc_events.js
 hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/hfrc_events.json
 hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/hfrc_events.py
 hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/test_hfrc_events.py
+hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/templates/hfrc_events.html
+hfrc_event_calendar/hfrc_event_calendar/doctype/hfrc_events/templates/hfrc_events_row.html
 hfrc_event_calendar/hfrc_event_calendar/doctype/image/__init__.py
 hfrc_event_calendar/hfrc_event_calendar/doctype/image/image.json
 hfrc_event_calendar/hfrc_event_calendar/doctype/image/image.py
