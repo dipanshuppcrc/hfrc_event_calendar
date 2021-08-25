@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_guest_to_view": 1,
  "autoname": "event_title.###",
  "creation": "2021-08-11 12:48:34.790372",
  "doctype": "DocType",
@@ -57,6 +56,7 @@
    "fieldname": "event_title",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Event Title",
    "reqd": 1,
    "unique": 1
@@ -120,7 +120,6 @@
   {
    "fieldname": "category",
    "fieldtype": "Link",
-   "in_standard_filter": 1,
    "label": "Category",
    "options": "Category",
    "reqd": 1
@@ -190,7 +189,6 @@
    "label": "Route"
   },
   {
-   "collapsible": 1,
    "fieldname": "images",
    "fieldtype": "Section Break",
    "label": "Images"
@@ -202,11 +200,10 @@
    "options": "Image"
   }
  ],
- "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-19 21:14:23.043301",
+ "modified": "2021-08-25 12:57:47.896738",
  "modified_by": "Administrator",
  "module": "Hfrc Event Calendar",
  "name": "HFRC Events",
@@ -234,11 +231,9 @@
    "report": 1,
    "role": "Website Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
- "route": "hfrc-event-calendar",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "event_title",
