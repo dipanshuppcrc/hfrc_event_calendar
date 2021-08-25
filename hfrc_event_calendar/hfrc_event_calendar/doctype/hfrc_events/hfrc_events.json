@@ -57,7 +57,6 @@
    "fieldname": "event_title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Event Title",
    "reqd": 1,
    "unique": 1
@@ -121,6 +120,7 @@
   {
    "fieldname": "category",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Category",
    "options": "Category",
    "reqd": 1
@@ -206,7 +206,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-19 12:05:26.487158",
+ "modified": "2021-08-19 21:14:23.043301",
  "modified_by": "Administrator",
  "module": "Hfrc Event Calendar",
  "name": "HFRC Events",
