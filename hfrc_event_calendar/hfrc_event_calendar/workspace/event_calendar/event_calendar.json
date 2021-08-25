@@ -6,7 +6,7 @@
    "label": "Events"
   }
  ],
- "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create New Event\",\"col\":6}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event List\",\"col\":6}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Events\",\"col\":12}}]",
+ "content": "[{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event List \",\"col\":5}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create New\",\"col\":7}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Events\",\"col\":12}}]",
  "creation": "2021-08-12 00:19:53.226010",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -31,7 +31,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-18 14:34:42.191527",
+ "modified": "2021-08-19 17:20:14.683606",
  "modified_by": "Administrator",
  "module": "Hfrc Event Calendar",
  "name": "Event Calendar",
@@ -44,15 +44,15 @@
  "shortcuts": [
   {
    "color": "Grey",
-   "doc_view": "New",
-   "label": "Create New Event",
+   "doc_view": "List",
+   "label": "Event List ",
    "link_to": "HFRC Events",
    "type": "DocType"
   },
   {
    "color": "Grey",
-   "doc_view": "List",
-   "label": "Event List",
+   "doc_view": "New",
+   "label": "Create New",
    "link_to": "HFRC Events",
    "type": "DocType"
   }
