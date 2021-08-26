@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "event_title.###",
  "creation": "2021-08-11 12:48:34.790372",
  "doctype": "DocType",
@@ -15,7 +16,7 @@
   "event_title",
   "description",
   "info",
-  "speaker__guest",
+  "speaker_guest",
   "column_break_10",
   "location",
   "other_location",
@@ -56,7 +57,6 @@
    "fieldname": "event_title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Event Title",
    "reqd": 1,
    "unique": 1
@@ -65,12 +65,6 @@
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description",
-   "reqd": 1
-  },
-  {
-   "fieldname": "speaker__guest",
-   "fieldtype": "Data",
-   "label": "Speaker / Guest",
    "reqd": 1
   },
   {
@@ -120,6 +114,7 @@
   {
    "fieldname": "category",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Category",
    "options": "Category",
    "reqd": 1
@@ -189,6 +184,7 @@
    "label": "Route"
   },
   {
+   "collapsible": 1,
    "fieldname": "images",
    "fieldtype": "Section Break",
    "label": "Images"
@@ -198,12 +194,19 @@
    "fieldtype": "Table",
    "label": "Image",
    "options": "Image"
+  },
+  {
+   "fieldname": "speaker_guest",
+   "fieldtype": "Data",
+   "label": "Speaker / Guest",
+   "reqd": 1
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-26 09:55:17.714581",
+ "modified": "2021-08-26 10:28:50.804457",
  "modified_by": "Administrator",
  "module": "Hfrc Event Calendar",
  "name": "HFRC Events",
@@ -231,6 +234,7 @@
    "report": 1,
    "role": "Editor",
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -243,6 +247,7 @@
    "share": 1
   }
  ],
+ "route": "hfrc-event-calendar",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "event_title",

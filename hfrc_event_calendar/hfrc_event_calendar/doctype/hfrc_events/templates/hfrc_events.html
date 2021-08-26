@@ -1,7 +1,66 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
-{% endblock %}
+<div class="py-10">
+    <h1>{{ name }}</h1>
+    <p style="font-size:x-large;" class="lead"> {{ start_date.strftime('%d %B %Y') }}</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="m-sm-2" id="img" onClick="enlargeImg(this)" src={{image}} alt={{title1}} style="width: 200px;">
+            {%- if image2 -%}
+            <img class="m-sm-2" id="img" onClick="enlargeImg(this)" src={{image2}} alt={{title2}} style="width: 200px;">
+            {%-endif -%}
+            {%- if image3 -%}
+            <img class="m-sm-2" id="img" onClick="enlargeImg(this)" src={{image3}} alt={{title3}} style="width: 200px;">
+            {%-endif -%}
+            {%- if image4 -%}
+            <img class="m-sm-2" id="img" onClick="enlargeImg(this)" src={{image4}} alt={{title4}} style="width: 200px;">
+            {%-endif -%}
+            {%- if image5 -%}
+            <img class="m-sm-2" id="img" onClick="enlargeImg(this)" src={{image5}} alt={{title5}} style="width: 200px;">
+            {%-endif -%}
+        </div>
 
-<!-- this is a sample default web page template -->
+        <div class="col-sm-6" style="font-size:larger;">
+            <p class="mt-3" style="font-size:x-large;">Description: <strong>{{ description }}</strong></p>
+            <hr>
+
+            <div class="mt-4">
+                {%- if location !="Other" -%}
+                <p>Location: <strong>{{ location }}</strong></p>
+                {%-endif -%}
+                {%- if location =="Other" -%}
+                <p>Location: <strong>{{ other_location }}</strong></p>
+                {%-endif -%}
+                <p>Speaker/ Guest: <strong>{{ speaker_guest }}</strong></p>
+                <p>Amount: <strong>{{ amount_spent }}</strong></p>
+            </div>
+            <hr>
+            <div class="mt-4">
+                <p>Category: <strong>{{ category}}</strong></p>
+                <p>Sub Category: <strong>{{ sub_category }}</strong></p>
+            </div>
+            <hr>
+            <div class="mt-4">Remarks: <strong>{{ remarks }}</strong></div>
+        </div>
+    </div>
+    <script>
+        // let img = document.getElementById("img");
+        function enlargeImg(img) {
+            if (img.style.transform === "" || img.style.transform === "scale(1)") {
+                img.style.transform = "scale(2)";
+                img.style.transition = "transform 0.25s ease";
+                img.style.zIndex = "2";
+
+            }
+            else {
+                img.style.transform = "scale(1)";
+                img.style.transition = "transform 0.25s ease";
+                img.style.zIndex = "";
+            }
+        }
+    </script>
+</div>
+
+
+{% endblock %}
