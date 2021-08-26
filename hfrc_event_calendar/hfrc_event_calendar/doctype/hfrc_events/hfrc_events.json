@@ -203,7 +203,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-25 12:57:47.896738",
+ "modified": "2021-08-26 09:55:17.714581",
  "modified_by": "Administrator",
  "module": "Hfrc Event Calendar",
  "name": "HFRC Events",
@@ -229,9 +229,18 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Website Manager",
+   "role": "Editor",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
   }
  ],
  "sort_field": "modified",
