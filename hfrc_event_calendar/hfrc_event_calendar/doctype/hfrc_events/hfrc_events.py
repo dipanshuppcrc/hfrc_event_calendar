@@ -16,15 +16,9 @@ def get_events(start, end, user=None, filters=None):
 	if not user:
 		user = frappe.session.user
 
-	# if isinstance(filters, str):
-	# 	filters = json.loads(filters)
-
-	#filter_condition = get_filters_cond('Event', filters, [])
 
 	tables = ["`tabHFRC Events`"]
-	# if "`tabHFRC Events Participants`" in filter_condition:
-	# 	tables.append("`tabHFRC Events Participants`")
-
+	
 	events = frappe.db.sql("""
 		SELECT `tabHFRC Events`.name,
 				`tabHFRC Events`.event_title,				
